@@ -23,7 +23,7 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     
     <style type="text/css" id="custom-fonts">
         /* custom fonts */
@@ -59,7 +59,7 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll text-center" href="#page-top">
-                    <img id="everloop" src="img/everloop.png"/></i> <span class="light">MATRIX Labs</span> Hackathon
+                    <img id="everloop" src="img/everloop.png"/> <span class="hidden-xs hidden-sm "><span class="light">MATRIX Labs</span> Hackathon</span>
                 </a>
             </div>
 
@@ -97,7 +97,7 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12 col-lg-12">
                         <h1 class="brand-heading">Matrix Labs Hackathon</h1>
                         <p class="intro-text">That's our first <strong>(but not the last)</strong> HACKATHON, powered by
                         MATRIX Labs Brasil and AbsamHost</p>
@@ -117,14 +117,14 @@
                 <h2>About the Hackathon</h2>
                 <p>We from MATRIX Labs Brasil with support of <a href="https://www.absamhost.com.br">AbsamHost</a> are bringing to YOU the chance to participate on a Amazing IoT Hackathon.</p>
                 <p>You can have the chance to meet new people, work with an amazing IoT device and, of course, win amazing prizes.</p>
-                <p>And it's totally <strong>FREE<strong>!!!!! So, what are you waiting for? Make your registration <a href="https://goo.gl/forms/tvWTE4Dml3IRjMGn2">(here)</a> and hope to be one of the lucky guys who's gonna participate!</p>
+                <p>And it's totally <strong>FREE</strong>!!!!! So, what are you waiting for? Make your registration <a href="https://goo.gl/forms/tvWTE4Dml3IRjMGn2">(here)</a> and hope to be one of the lucky guys who's gonna participate!</p>
             </div>
         </div>
     </section>
 
     <!-- General Rules Section -->
-    <section id="generalRules" class="content-section text-center ">
-        <div class="download-section darker-back">
+    <section id="generalRules" class="darker-black content-section text-center ">
+        <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Our Rules</h2>
@@ -140,26 +140,41 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Schedule</h2>
-                    <p>Our <strong>AMAZING</span> hackathon will start at March 16h and ends at March 17h. It's 24 HOURS OF AMAZINGNESS.</p>
+                    <p>Our <strong>AMAZING</strong> hackathon will start at March 16h and ends at March 17h. It's 24 HOURS OF AMAZINGNESS.</p>
+                    
+                    <div class="agenda">
+                        <div class="row">
+                            <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">16/03/2017 - 8:30am</div>
+                            <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">MP 55</div>
+                            <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Apresentação do Hackathon</div>
+                        </div>
+                    </div>
+                     <div class="agenda">
+                        <div class="row">
+                            <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">17/03/2017 - 12:00pm</div>
+                            <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">MP 55</div>
+                            <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12">Encerramento do Hackathon</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Location Section -->
-    <section id="location" class="content-section text-center">
-        <div class="download-section darker-back">
+    <section id="location" class="darker-black content-section text-center">
+        <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Location</h2>
                     <p>Our <strong>AMAZING</span> hackathon will be located at Universidade Estadual de Feira de Santana (UEFS).</p>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.7068816508445!2d-38.973827085585846!3d-12.20033704809712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x714384295e0790f%3A0x6e9b7e439a929e1a!2sUniversidade+Estadual+de+Feira+de+Santana!5e0!3m2!1sen!2sbr!4v1488856885148" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
                 </div>
             </div>
         </div>
     </section>
+
+    <div id="map">
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
@@ -190,7 +205,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe7xQb1YWBLPDqFYAKE4G8_ysGyfuYyPg"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
